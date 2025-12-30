@@ -33,3 +33,14 @@ DATA_VALIDATION_DRIFT_REPORT_DIR: str = "drift_report"
 DATA_VALIDATION_DRIFT_REPORT_FILE_NAME: str = "report.yaml"
 DATA_VALIDATION_DRIFT_REPORT_HTML_FILE_NAME: str = "report.html"
 
+
+"""
+Data Transformation ralated constant start with DATA_TRANSFORMATION VAR NAME
+"""
+TARGET_COLUMN = "case_status"
+CURRENT_YEAR = date.today().year
+DATA_TRANSFORMATION_DIR_NAME:str = "data_transformation"
+DATA_TRANSFORMATION_TRANSFORMED_DATA_DIR:str = "transformed"
+DATA_TRANSFORMATION_TRANSFORMED_OBJECT_DIR:str = "transformed_object"
+PREPROCSSING_OBJECT_FILE_NAME = "preprocessing.pkl"
+
