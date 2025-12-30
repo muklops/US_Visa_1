@@ -74,7 +74,8 @@ class TrainPipeline:
             raise USvisaException(e,sys) from e
 
 
-    def start_data_transformation(self, data_ingestion_artifact: DataIngestionArtifact, data_validation_artifact: DataValidationArtifact) -> DataTransformationArtifact:
+    def start_data_transformation(self, data_ingestion_artifact: DataIngestionArtifact, 
+                                  data_validation_artifact: DataValidationArtifact) -> DataTransformationArtifact:
         """
         This method of TrainPipeline class is responsible for starting data transformation component
         """
