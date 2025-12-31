@@ -123,7 +123,7 @@ export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
    - AWS_ACCESS_KEY_ID
    - AWS_SECRET_ACCESS_KEY
    - AWS_DEFAULT_REGION
-   - ECR_REPO
+   - ECR_REPO = visa  #(Save the URI: 062700375554.dkr.ecr.us-east-1.amazonaws.com/visa, last word you have to use,since url path is alredy taken care in aws.yaml file)
    - MONGODB_URL
 
     
