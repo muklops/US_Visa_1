@@ -3,11 +3,11 @@ import sys
 
 import numpy as np
 import pandas as pd
-from US_VISA.entity.config_entity import USvisaPredictorConfig
-from US_VISA.entity.s3_estimator import USvisaEstimator
-from US_VISA.exception import USvisaException
-from US_VISA.logger import logging
-from US_VISA.utils.main_utils import read_yaml_file
+from US_Visa_1.entity.config_entity import USvisaPredictorConfig
+from US_Visa_1.entity.s3_estimator import USvisaEstimator
+from US_Visa_1.exception import USvisaException
+from US_Visa_1.logger import logging
+from US_Visa_1.utils.main_utils import read_yaml_file
 from pandas import DataFrame
 
 
@@ -107,7 +107,7 @@ class USvisaClassifier:
             logging.info("Entered predict method of USvisaClassifier class")
             model = USvisaEstimator(
                 bucket_name=self.prediction_pipeline_config.model_bucket_name,
-                model_path=self.prediction_pipeline_config.model_file_path,
+                model_path=self.prediction_pipeline_config.model_file_path
             )
             result =  model.predict(dataframe)
             
