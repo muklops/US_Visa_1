@@ -111,6 +111,8 @@ export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
 	sudo usermod -aG docker ubuntu
 
 	newgrp docker
+
+	docker --version
 	
 # 6. Configure EC2 as self-hosted runner:
     setting>actions>runner>new self hosted runner> choose os> then run command one by one
